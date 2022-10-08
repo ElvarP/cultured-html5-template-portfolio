@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Cultured HTML5 Template (Portfolio)</title>
+	</head>
+	<body>
+		<header class="p-8 flex relative lg:justify-between">
+			<a class="underline text-2xl font-black underline-offset-4" href="">Cultured</a>
+			<div id="toggleMobileNavigation" class="absolute top-0 right-0 lg:hidden p-4">
+				<label class="cursor-pointer flex flex-col w-8 h-8 justify-between overflow-hidden">
+					<input id="toggleNavigation" type="checkbox" class="peer appearance-none" />
+					<span class="bg-black h-[3px] w-8 transition-all origin-left peer-checked:rotate-[42deg]"></span>
+					<span class="bg-black h-[3px] w-8 transition-all peer-checked:bg-opacity-0"></span>
+					<span class="bg-black h-[3px] w-8 transition-all origin-left peer-checked:-rotate-[42deg]"></span>
+				</label>
+			</div>
+			<nav
+				id="navigation"
+				class="origin-top opacity-0 scale-0 lg:scale-100 lg:opacity-100 transition-all flex flex-col items-end lg:flex-row mt-10 gap-3 pr-4 lg:mt-0 absolute right-0 lg:static">
+				<a href="#home" class="outline outline-1 rounded-md p-2 text-2xl lg:text-lg bg-white lg:px-8 hover:bg-stone-100 active:bg-stone-200">Home</a>
+				<a href="#portfolio" class="outline outline-1 rounded-md p-2 text-2xl lg:text-lg bg-white lg:px-8 hover:bg-stone-100 active:bg-stone-200">Portfolio</a>
+				<a href="#work" class="outline outline-1 rounded-md p-2 text-2xl lg:text-lg bg-white lg:px-8 hover:bg-stone-100 active:bg-stone-200">Work</a>
+				<a href="#contact" class="outline outline-1 rounded-md p-2 text-2xl lg:text-lg bg-white lg:px-8 hover:bg-stone-100 active:bg-stone-200">Contact</a>
+			</nav>
+		</header>
+
+		<main id="home" class="flex text-center lg:text-start flex-col gap-4 px-16 pt-24 pb-24 2xl:px-96">
+			<h1 class="text-3xl 2xl:text-5xl xl font-light text-stone-900">Rafael Hunter</h1>
+			<h2 class="text-md 2xl:text-2xl text-stone-600">Fullstack developer</h2>
+			<h3 class="leading-relaxed 2xl:leading-relaxed text-xl 2xl:text-4xl text-stone-700">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur atque sequi autem voluptatum, quae dolores nemo quidem minus dignissimos temporibus. Cum tempore nihil laborum
+				minus, praesentium id placeat ipsam similique!
+			</h3>
+		</main>
+
+		<section id="portfolio" class="py-8 mt-24 bg-stone-100 shadow-inner">
+			<h1 class="px-16 text-3xl 2xl:text-5xl underline text-stone-900 underline-offset-8 pb-12 font-light">Portfolio</h1>
+			<div class="px-16 gap-4 2xl:gap-y-12 grid grid-cols-12">
+				<div class="portfolio-item flex flex-col col-span-12 lg:col-span-8">
+					<img src="img/landscape-portfolio-item-1.jpg" class="rounded-lg hover:saturate-150 transition-all object-cover lg:h-96" />
+					<h1 class="text-center mt-6 text-stone-900 2xl:text-2xl"><a href="">Project 1</a></h1>
+					<h2 class="text-center text-stone-700 font-light 2xl:text-xl">Photography</h2>
+				</div>
+				<div class="portfolio-item flex flex-col col-span-12 lg:col-span-4">
+					<img src="img/square-portfolio-item-1.jpg" class="rounded-lg hover:saturate-150 transition-all object-cover lg:h-96" />
+					<h1 class="text-center mt-6 text-stone-900 2xl:text-2xl"><a href="">Project 2</a></h1>
+					<h2 class="text-center text-stone-700 font-light 2xl:text-xl">Food</h2>
+				</div>
+				<div class="portfolio-item flex flex-col col-span-12 lg:col-span-4">
+					<img src="img/square-portfolio-item-2.jpg" class="rounded-lg hover:saturate-150 transition-all object-cover lg:h-96" />
+					<h1 class="text-center mt-6 text-stone-900 2xl:text-2xl"><a href="">Project 3</a></h1>
+					<h2 class="text-center text-stone-700 font-light 2xl:text-xl">Video Games</h2>
+				</div>
+				<div class="portfolio-item flex flex-col col-span-12 lg:col-span-8">
+					<img src="img/landscape-portfolio-item-2.jpg" class="rounded-lg hover:saturate-150 transition-all object-cover lg:h-96" />
+					<h1 class="text-center mt-6 text-stone-900 2xl:text-2xl"><a href="">Project 4</a></h1>
+					<h2 class="text-center text-stone-700 font-light 2xl:text-xl">Music</h2>
+				</div>
+			</div>
+		</section>
+		<section id="work" class="px-16 pt-24 pb-24 flex flex-col gap-24 2xl:px-96">
+			<div class="flex flex-col gap-6 text-center lg:text-start">
+				<h1 class="text-2xl font-light 2xl:text-5xl">Work</h1>
+				<p class="text-stone-500 2xl:text-xl">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus aliquid sequi quae sunt labore, cupiditate praesentium rem accusamus voluptatum reprehenderit a corporis
+					est delectus! Praesentium itaque eum fugit. Ipsa?
+				</p>
+			</div>
+			<div class="flex flex-col font-light text-center 2xl:text-start gap-16 2xl:gap-28 lg:flex-row">
+				<div class="work-item flex flex-col gap-3">
+					<h1 class="text-stone-800 2xl:text-3xl">Advania</h1>
+					<h2 class="text-stone-600 2xl:text-3xl">Manager</h2>
+					<h3 class="text-stone-600 text-sm 2xl:text-2xl">2020 - Present</h3>
+				</div>
+				<div class="work-item flex flex-col gap-3">
+					<h1 class="text-stone-800 2xl:text-3xl">Advania</h1>
+					<h2 class="text-stone-600 2xl:text-3xl">Fullstack</h2>
+					<h3 class="text-stone-600 text-sm 2xl:text-2xl">2018 - 2022</h3>
+				</div>
+				<div class="work-item flex flex-col gap-3">
+					<h1 class="text-stone-800 2xl:text-3xl">Advania</h1>
+					<h2 class="text-stone-600 2xl:text-3xl">Frontend</h2>
+					<h3 class="text-stone-600 text-sm 2xl:text-2xl">2016 - 2018</h3>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="py-24 mt-24 px-16 bg-stone-100 shadow-inner flex flex-col gap-12 2xl:px-96">
+			<div class="flex flex-col gap-6 text-center lg:text-start">
+				<h1 class="text-2xl font-light 2xl:text-5xl">Contact</h1>
+				<p class="text-stone-500 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div>
+				<form action="" class="flex flex-col gap-6 text-stone-800">
+					<div class="name-field flex flex-col gap-2 2xl:text-2xl">
+						<label for="name" class="uppercase font-light">Name</label>
+						<input type="text" placeholder="Enter your name" class="p-2 border border-stone-200" />
+					</div>
+					<div class="email-field flex flex-col gap-2 2xl:text-2xl">
+						<label for="email" class="uppercase font-light 2xl:text-2xl">Email</label>
+						<input type="text" placeholder="Enter your email" class="p-2 border border-stone-200" />
+					</div>
+					<div class="message-field flex flex-col gap-2 2xl:text-2xl">
+						<label for="email" class="uppercase font-light 2xl:text-2xl">Message</label>
+						<input type="text" size="" placeholder="Enter your message" class="p-2 pb-24 border border-stone-200" />
+					</div>
+					<button class="bg-stone-800 hover:bg-stone-700 active:bg-stone-500 p-3 rounded-sm lg:w-32">
+						<span class="uppercase text-stone-300 2xl:text-xl">Submit</span>
+					</button>
+				</form>
+			</div>
+		</section>
+		<footer class="pt-24 pb-4 flex flex-col lg:px-16 2xl:px-96 lg:block lg:py-8 justify-between">
+			<div class="flex flex-col lg:flex-row float-right font-light text-stone-600 gap-4 text-center lg:text-start text-md 2xl:text-lg">
+				<a href="">Facebook</a>
+				<a href="">Instagram</a>
+				<a href="">Github</a>
+			</div>
+			<a href="" class="text-center mt-12 mb-4 font-light text-stone-600 text-md 2xl:text-lg">Code @ elvarp.is</a>
+		</footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
